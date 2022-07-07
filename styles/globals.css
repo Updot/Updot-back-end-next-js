@@ -1,7 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url(./mastHead.css);
 
 :root,
 a {
@@ -13,6 +14,7 @@ a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
   /* cursor: none !important; */
 }
 html,
@@ -20,4 +22,31 @@ body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.1;
   letter-spacing: 0em;
+}
+
+body::-webkit-scrollbar,
+textarea::-webkit-scrollbar {
+  width: 5px;
+  /* display: none; */
+}
+
+/* Track */
+body::-webkit-scrollbar-track,
+textarea::-webkit-scrollbar-track {
+  background: #000 !important;
+  mix-blend-mode: difference !important;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb,
+textarea::-webkit-scrollbar-thumb {
+  background: #fff !important;
+  mix-blend-mode: difference !important;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover,
+textarea::-webkit-scrollbar-thumb:hover {
+  background: #fff !important;
+  mix-blend-mode: difference !important;
 }

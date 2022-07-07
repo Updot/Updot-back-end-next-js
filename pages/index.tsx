@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { useTheme } from "next-themes";
-
+import MastHead from "../components/Masthead/mastHead";
 const Home: NextPage = () => {
   const { theme, setTheme } = useTheme();
   return (
@@ -63,9 +63,7 @@ const Home: NextPage = () => {
         />
       </Head>
       <div className="bg-white dark:bg-black h-full">
-        <h1 className="text-3xl text-black dark:text-white">
-          Welcome to Your App
-        </h1>
+        <MastHead mastHeadTitle="We do things better at UPDOT" />
         <button
           className="text-black dark:text-white"
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
